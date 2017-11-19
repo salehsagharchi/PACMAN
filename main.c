@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int n, m, score, min, sec, x, y;
+int n, m, min, sec, x, y;
 
 struct PAC {
 	int dir;
+	int score;
 	int lives;
 	int firstx;
 	int firsty;
@@ -22,6 +23,28 @@ struct ROOH {
 	int nowx;
 	int nowy;
 };
+
+int ischeeseremain(char all[100][100] , int m , int n)
+{
+	int cheeseN = 0;
+	int pinappN = 0;
+	int cheryN = 0;
+	for(int y = 0 ; y < n ; y++)
+	{
+		for(int x = 0 ; x < m ; x++)
+		{
+			if (all[x][y] == 'O')
+				pinappN++;
+			if (all[x][y] == '*')
+				cheeseN++;
+			if (all[x][y] == '^')
+				cheryN++;
+		}
+	}	
+	if(pinappN == 0 && cheeseN == 0)
+		return 0;
+	return 1;
+}
 
 void inputstoarrays(struct ROOH *rohadd)
 {
@@ -78,6 +101,30 @@ void inputstoarrays(struct ROOH *rohadd)
 	*rohadd  = rooh;
 }
 
+void checkscore(struct PAC *pacman,int all[100][100],struct ROOH rooh[4])
+{
+	int local = 0;
+	if (all[pacman->nowx][pacman->nowy] == 'O')
+		local += 50;
+	if (all[pacman->nowx][pacman->nowy] == '*')
+		local++;
+	if (all[pacman->nowx][pacman->nowy] == '^')
+		local += 20;
+		
+	for(int i = 0 ; i < 4 ; i++)
+	{
+		if(rooh[i].state == 0)
+		{
+			if(rooh[i].nowx == pacman->nowx && rooh[i].nowy == pacman->nowy)
+			{
+				local += 50;
+			}	
+		}	
+	}	
+	
+	pacman->score += local;	
+}
+
 int main(int argc, char *argv[]) {
 
 	scanf("%d %d", &n, &m);
@@ -109,10 +156,13 @@ int main(int argc, char *argv[]) {
 //	}
 	
 	
-	scanf("%d:%d",&min,&sec);
-	scanf("%d",&score);
+
+	
 	
 	struct PAC pacman;
+	
+	scanf("%d:%d",&min,&sec);
+	scanf("%d", &pacman.score);
 	
 	fflush(stdin);
 	scanf("pacman: %d %d (%d,%d) (%d,%d)", 
@@ -125,7 +175,16 @@ int main(int argc, char *argv[]) {
 	inputstoarrays(&rooh[2]);
 	inputstoarrays(&rooh[3]);
 
-
+	if(pacman.dir == 1)
+		pacman.nowy--;
+	if(pacman.dir == 2)
+		pacman.nowx++;
+	if(pacman.dir == 3)
+		pacman.nowy++;
+	if(pacman.dir == 4)
+		pacman.nowx--;
+		
+	checkscore(&pacman,all,rooh);				
 	
 	return 0;
 }
