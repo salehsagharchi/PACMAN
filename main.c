@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int n, m, min, sec, x, y;
+int all[100][100];
 
 struct PAC {
 	int dir;
@@ -24,7 +25,7 @@ struct ROOH {
 	int nowy;
 };
 
-int ischeeseremain(char all[100][100] , int m , int n)
+int ischeeseremain(int m , int n)
 {
 	int cheeseN = 0;
 	int pinappN = 0;
@@ -96,13 +97,23 @@ void inputstoarrays(struct ROOH *rohadd)
 		x = 3;
 		rooh.time = 0;
 	}
-	sscanf(inputr[x], "(%d,%d)", &rooh.firstx , &rooh.firsty);
-	sscanf(inputr[x + 1], "(%d,%d)", &rooh.nowx , &rooh.nowy);
+	sscanf(inputr[x], "(%d,%d)", &rooh.firsty , &rooh.firstx);
+	sscanf(inputr[x + 1], "(%d,%d)", &rooh.nowy , &rooh.nowx);
 	*rohadd  = rooh;
 }
 
-void checkscore(struct PAC *pacman,int all[100][100],struct ROOH rooh[4])
+void checkscore(struct PAC *pacman,int m ,int n,struct ROOH rooh[4])
 {
+	//printf("%d %d\n",pacman->nowx,pacman->nowy);
+	//printf("%c",all[pacman->nowx][pacman->nowy]);
+	for(int y = 0 ; y < n ; y++)
+	{
+		for(int x = 0 ; x < m ; x++)
+		{
+			//printf("%c ", all[x][y]);
+		}
+	}
+	//printf("$$$$$$$$$$$");
 	int local = 0;
 	if (all[pacman->nowx][pacman->nowy] == 'O')
 		local += 50;
@@ -110,6 +121,9 @@ void checkscore(struct PAC *pacman,int all[100][100],struct ROOH rooh[4])
 		local++;
 	if (all[pacman->nowx][pacman->nowy] == '^')
 		local += 20;
+		
+	if (all[pacman->nowx][pacman->nowy] == 'O' || all[pacman->nowx][pacman->nowy] == '*' || all[pacman->nowx][pacman->nowy] == '^')
+		all[pacman->nowx][pacman->nowy] = "_";
 		
 	for(int i = 0 ; i < 4 ; i++)
 	{
@@ -125,35 +139,41 @@ void checkscore(struct PAC *pacman,int all[100][100],struct ROOH rooh[4])
 	pacman->score += local;	
 }
 
+
+int checkwin(struct PAC pacman, int m , int n)
+{
+	if(pacman.lives < 0)
+	{
+		return 0;
+	}
+	if(ischeeseremain(m,n) == 1)
+	{
+		return 0;
+	}
+	return 1;
+}
 int main(int argc, char *argv[]) {
 
 	scanf("%d %d", &n, &m);
 
-	char all[m][n];
 	char temp[300];
 	fflush(stdin);
 	for(y = 0 ; y < n ; y++)
 	{
 		gets(temp);
-		x = 0;
-		for(int i = 0 ; i < 300 && temp[i] != '\0'; i++)
+		for(int x = 0 ; x < m; x++)
 		{
-			if(temp[i] != ' ')
-			{
-				all[x][y] = temp[i];
-				x++;
-			}
-			
+			all[x][y] = temp[x];
 		}
 	}
 	
-//	for(int y = 0 ; y < n ; y++)
-//	{
-//		for(int x = 0 ; x < m ; x++)
-//		{
-//			printf("%c ", all[x][y]);
-//		}
-//	}
+	for(int y = 0 ; y < n ; y++)
+	{
+		for(int x = 0 ; x < m ; x++)
+		{
+		 //printf("%c ", all[x][y]);
+		}
+	}
 	
 	
 
@@ -166,7 +186,7 @@ int main(int argc, char *argv[]) {
 	
 	fflush(stdin);
 	scanf("pacman: %d %d (%d,%d) (%d,%d)", 
-	&pacman.dir, &pacman.lives , &pacman.firstx , &pacman.firsty , &pacman.nowx, &pacman.nowy);
+	&pacman.dir, &pacman.lives , &pacman.firsty , &pacman.firstx , &pacman.nowy, &pacman.nowx);
 	
 	struct ROOH rooh[4];
 	
@@ -174,17 +194,63 @@ int main(int argc, char *argv[]) {
 	inputstoarrays(&rooh[1]);
 	inputstoarrays(&rooh[2]);
 	inputstoarrays(&rooh[3]);
+	
+	//printf("%d %d\n",pacman.nowx,pacman.nowy);
 
+	x = 0;
+	y = 0;
 	if(pacman.dir == 1)
-		pacman.nowy--;
+		y--;
 	if(pacman.dir == 2)
-		pacman.nowx++;
+		x++;
 	if(pacman.dir == 3)
-		pacman.nowy++;
+		y++;
 	if(pacman.dir == 4)
-		pacman.nowx--;
+		x--;
 		
-	checkscore(&pacman,all,rooh);				
+	if(all[pacman.nowx + x][pacman.nowy + y] != '#')
+	{
+		pacman.nowx += x;
+		pacman.nowy += y;
+	}
+		
+	
+	
+	checkscore(&pacman,m,n,rooh);	
+	//printf("\ncheckscore\n");
+	
+	for(int i = 0 ; i < 4 ; i++)
+	{
+		//printf("%d %d %d\n",rooh[i].state,rooh[i].nowx,rooh[i].nowy);
+		if(rooh[i].state == 1)
+		{
+			if(rooh[i].nowx == pacman.nowx && rooh[i].nowy == pacman.nowy)
+			{
+				//printf("%d %d %d\n",rooh[i].state,rooh[i].nowx,rooh[i].nowy);
+				x = pacman.firstx;
+				pacman.nowx = x;
+				y = pacman.firsty;
+				pacman.nowy = y ;
+				
+				pacman.lives--;
+				break;
+			}	
+		}	
+	}			
+
+	
+	printf("(%d,%d)\n",pacman.nowy,pacman.nowx);
+//	printf("%d", pacman.nowx);
+    printf("%d\n"     ,pacman.score);
+//	return 0;
+	if(checkwin(pacman,m,n) == 1)
+	{
+		printf("Yes");
+	}
+	else
+	{
+		printf("No");
+	}
 	
 	return 0;
 }
