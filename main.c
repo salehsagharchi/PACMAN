@@ -27,6 +27,14 @@ struct ROOH
     int nowy;
 };
 
+void clean_stdin()
+{
+    int c;
+    do {
+        c = getchar();
+    } while (c != '\n' && c != EOF);
+}
+
 int ischeeseremain(int m, int n)
 {
     int cheeseN = 0;
@@ -61,7 +69,7 @@ void inputstoarrays(struct ROOH *rohadd)
     }
 
 
-    fflush(stdin);
+    scanf(" ");
     gets(temp);
 
 
@@ -104,7 +112,7 @@ void inputstoarrays(struct ROOH *rohadd)
     *rohadd  = rooh;
 }
 
-void checkscore(struct PAC *pacman,int m,int n,struct ROOH rooh[4])
+void checkscore(struct PAC *pacman,int m,int n,struct ROOH *rooh)
 {
     //printf("%d %d\n",pacman->nowx,pacman->nowy);
     //printf("%c",all[pacman->nowx][pacman->nowy]);
@@ -121,10 +129,10 @@ void checkscore(struct PAC *pacman,int m,int n,struct ROOH rooh[4])
     {
         for(int i = 0 ; i < 4 ; i++)
         {
-            if(rooh[i].state == 1)
+            if((rooh+ i)->state == 1)
             {
-                rooh[i].state = 0;
-                rooh[i].time = 10;
+                (rooh + i)->state = 0;
+                (rooh + i)->time = 10;
             }
 
         }
@@ -139,9 +147,9 @@ void checkscore(struct PAC *pacman,int m,int n,struct ROOH rooh[4])
 
     for(int i = 0 ; i < 4 ; i++)
     {
-        if(rooh[i].state == 0)
+        if((rooh + i)->state == 0)
         {
-            if(rooh[i].nowx == pacman->nowx && rooh[i].nowy == pacman->nowy)
+            if((rooh + i)->nowx == pacman->nowx && (rooh + i)->nowy == pacman->nowy)
             {
                 local += 50;
             }
@@ -170,7 +178,7 @@ int main(int argc, char *argv[])
     scanf("%d %d", &n, &m);
 
     char temp[300];
-    fflush(stdin);
+    scanf(" ");
     for(y = 0 ; y < n ; y++)
     {
         gets(temp);
@@ -186,6 +194,7 @@ int main(int argc, char *argv[])
         {
             //printf("%c ", all[x][y]);
         }
+        //printf("\n");
     }
 
 
@@ -197,7 +206,7 @@ int main(int argc, char *argv[])
     scanf("%d:%d",&min,&sec);
     scanf("%d", &pacman.score);
 
-    fflush(stdin);
+    scanf(" ");
     scanf("pacman: %d %d (%d,%d) (%d,%d)",
           &pacman.dir, &pacman.lives, &pacman.firsty, &pacman.firstx, &pacman.nowy, &pacman.nowx);
 
@@ -238,11 +247,11 @@ int main(int argc, char *argv[])
 
     if(y < 0)
         y = n - 1;
-    if(y == n)
+    if(y >= n)
         y = 0;
     if(x < 0)
         x = m-1;
-    if(x == m)
+    if(x >= m)
         x = 0;
 
 
@@ -270,10 +279,10 @@ int main(int argc, char *argv[])
             if(rooh[i].nowx == pacman.nowx && rooh[i].nowy == pacman.nowy)
             {
                 //printf("%d %d %d\n",rooh[i].state,rooh[i].nowx,rooh[i].nowy);
-                x = pacman.firstx;
-                pacman.nowx = x;
-                y = pacman.firsty;
-                pacman.nowy = y ;
+                //x =;
+                pacman.nowx = pacman.firstx;
+                //y = pacman.firsty;
+                pacman.nowy = pacman.firsty ;
 
                 pacman.lives--;
                 break;
