@@ -25,6 +25,8 @@ stdlib.h
 -
 physics.h
 -
+time.h
+-
 
 /cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.h
 stdbool.h
@@ -39,6 +41,18 @@ map.h
 /cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.c
 physics.h
 /cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.h
+game.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.h
+map.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/map.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+time.h
+-
 
 /cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.h
 game.h

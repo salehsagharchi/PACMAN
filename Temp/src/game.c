@@ -3,9 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <physics.h>
+#include <time.h>
 
 void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman, Ghost* outGhosts) {
-    // fill me
+    srand(time(NULL));
+
     int lines = 0;
     int Xs,Ys;
     printf("%s\n",filename);
@@ -151,7 +153,7 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
     outGhosts[3].startX = local[0];
     outGhosts[3].x = (double)local[3];
     outGhosts[3].y = (double)local[2];
-    
+
 }
 
 void checkEatables(Map* map, Game* outGame, Pacman* outPacman, Ghost* outGhosts) {
