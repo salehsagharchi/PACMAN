@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/input.h
+
+../src/physics.h
+game.h
+../src/game.h
+input.h
+../src/input.h
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.c
+game.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.h
+map.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/map.h
+stdio.h
+-
+stdlib.h
+-
+physics.h
+-
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.h
+stdbool.h
+-
+map.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/map.h
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/input.h
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/map.h
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.c
+physics.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.h
+
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/physics.h
+game.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/game.h
+input.h
+/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/Temp/src/input.h
+
