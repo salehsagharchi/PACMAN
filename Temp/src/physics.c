@@ -6,14 +6,11 @@
 #include <math.h>
 #include <time.h>
 
-struct POINT{
-    int x;
-    int y;
-};
 
-typedef struct POINT POINT;
 
 char key;
+
+
 
 char gettype(GhostType a)
 {

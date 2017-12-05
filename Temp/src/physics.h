@@ -7,6 +7,19 @@
 #define PACMAN_DEFAULT_SPEED 4.
 #define GHOST_DEFAULT_SPEED 4.
 
+struct POINT{
+    int x;
+    int y;
+};
+
+typedef struct POINT POINT;
+
+
+char gettype(GhostType a);
+char GetKey(Action a);
+POINT getpoint(Direction dir);
+
+
 // TO WRITE
 Direction decidePacman(const Map* map, Pacman* pacman, Action action);
 

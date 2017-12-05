@@ -34,7 +34,7 @@ typedef struct {
 } Pacman;
 
 #define CYCLES_PER_SEC 60
-#define BLUE_DURATION 5*CYCLES_PER_SEC
+#define BLUE_DURATION (5*CYCLES_PER_SEC)
 
 typedef struct {
     double x, y;
