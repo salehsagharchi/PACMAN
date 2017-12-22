@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src" 
+C_INCLUDES = -I"/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src" 
 

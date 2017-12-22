@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Saleh-WS/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Saleh/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Saleh-WS/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Saleh/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PACMAN_phase1_.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/PACMAN_phase1_.dir/flags.make
 
 CMakeFiles/PACMAN_phase1_.dir/src/game.c.o: CMakeFiles/PACMAN_phase1_.dir/flags.make
 CMakeFiles/PACMAN_phase1_.dir/src/game.c.o: ../src/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PACMAN_phase1_.dir/src/game.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACMAN_phase1_.dir/src/game.c.o   -c "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PACMAN_phase1_.dir/src/game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACMAN_phase1_.dir/src/game.c.o   -c "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c"
 
 CMakeFiles/PACMAN_phase1_.dir/src/game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACMAN_phase1_.dir/src/game.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c" > CMakeFiles/PACMAN_phase1_.dir/src/game.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c" > CMakeFiles/PACMAN_phase1_.dir/src/game.c.i
 
 CMakeFiles/PACMAN_phase1_.dir/src/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACMAN_phase1_.dir/src/game.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c" -o CMakeFiles/PACMAN_phase1_.dir/src/game.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/game.c" -o CMakeFiles/PACMAN_phase1_.dir/src/game.c.s
 
 CMakeFiles/PACMAN_phase1_.dir/src/game.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/PACMAN_phase1_.dir/src/game.c.o.provides.build: CMakeFiles/PACMAN_pha
 
 CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o: CMakeFiles/PACMAN_phase1_.dir/flags.make
 CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o: ../src/physics.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o   -c "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o   -c "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c"
 
 CMakeFiles/PACMAN_phase1_.dir/src/physics.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACMAN_phase1_.dir/src/physics.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c" > CMakeFiles/PACMAN_phase1_.dir/src/physics.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c" > CMakeFiles/PACMAN_phase1_.dir/src/physics.c.i
 
 CMakeFiles/PACMAN_phase1_.dir/src/physics.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACMAN_phase1_.dir/src/physics.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c" -o CMakeFiles/PACMAN_phase1_.dir/src/physics.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/src/physics.c" -o CMakeFiles/PACMAN_phase1_.dir/src/physics.c.s
 
 CMakeFiles/PACMAN_phase1_.dir/src/physics.c.o.requires:
 
@@ -121,7 +121,7 @@ PACMAN_phase1_.exe: ../sdl/sdl2-lib/libSDL2.a
 PACMAN_phase1_.exe: ../sdl/sdl2-lib/libSDL2main.a
 PACMAN_phase1_.exe: ../sdl/sdl2-gfx-lib/libsdl-gfx.a
 PACMAN_phase1_.exe: CMakeFiles/PACMAN_phase1_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable PACMAN_phase1_.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable PACMAN_phase1_.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PACMAN_phase1_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/PACMAN_phase1_.dir/clean:
 .PHONY : CMakeFiles/PACMAN_phase1_.dir/clean
 
 CMakeFiles/PACMAN_phase1_.dir/depend:
-	cd "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles/PACMAN_phase1_.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/CMakeFiles/PACMAN_phase1_.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/PACMAN_phase1_.dir/depend
 

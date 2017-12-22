@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)
+# Install script for directory: /cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase1 files/PACMAN(phase1)/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
