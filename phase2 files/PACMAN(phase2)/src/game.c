@@ -46,7 +46,7 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
     {
         for(int i = 0; i < Xs; i++)
         {
-            if(buf[1 + j][i] == CELL_BLOCK || buf[1 + j][i] == CELL_EMPTY)
+            if(buf[1 + j][i] == CELL_BLOCK || buf[1 + j][i] == CELL_EMPTY || buf[1 + j][i] == CELL_PINEAPPLE)
                 outMap->cells[i][j] = buf[1 + j][i];
 
             if(buf[1 + j][i] == CELL_CHEESE)
@@ -97,7 +97,7 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
         outGhosts[0].blueCounterDown = (double)(local[4]) * CYCLES_PER_SEC;
     }
     outGhosts[0].startX = local[1];
-    outGhosts[0].startX = local[0];
+    outGhosts[0].startY = local[0];
     outGhosts[0].x = (double)local[3];
     outGhosts[0].y = (double)local[2];
 
@@ -121,7 +121,7 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
         outGhosts[1].blueCounterDown = (double)(local[4]) * CYCLES_PER_SEC;
     }
     outGhosts[1].startX = local[1];
-    outGhosts[1].startX = local[0];
+    outGhosts[1].startY = local[0];
     outGhosts[1].x = (double)local[3];
     outGhosts[1].y = (double)local[2];
 
@@ -145,7 +145,7 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
         outGhosts[2].blueCounterDown = (double)(local[4]) * CYCLES_PER_SEC;
     }
     outGhosts[2].startX = local[1];
-    outGhosts[2].startX = local[0];
+    outGhosts[2].startY = local[0];
     outGhosts[2].x = (double)local[3];
     outGhosts[2].y = (double)local[2];
 
@@ -170,14 +170,14 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
         outGhosts[3].blueCounterDown = (double)(local[4]) * CYCLES_PER_SEC;
     }
     outGhosts[3].startX = local[1];
-    outGhosts[3].startX = local[0];
+    outGhosts[3].startY = local[0];
     outGhosts[3].x = (double)local[3];
     outGhosts[3].y = (double)local[2];
 
 }
 
 void checkEatables(Map* map, Game* outGame, Pacman* outPacman, Ghost* outGhosts) {
-    return;
+
     int lx[5], ly[5];
 
     lx[0] = (int)(outPacman->x);

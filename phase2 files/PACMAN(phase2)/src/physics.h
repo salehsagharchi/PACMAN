@@ -24,6 +24,6 @@ POINT getpoint(Direction dir);
 Direction decidePacman(const Map* map, Pacman* pacman, Action action);
 
 // TO WRITE
-//Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *blinky);
-Direction decideGhost(const Map* map, Ghost* ghost);
+Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *blinky);
+//Direction decideGhost(const Map* map, Ghost* ghost);
 #endif
