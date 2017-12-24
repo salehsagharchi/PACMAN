@@ -25,8 +25,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="48">
+              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file leaf-file-name="game.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="172" column="23" lean-forward="false" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+            <state relative-caret-position="80">
+              <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="map.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/map.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="240">
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="physics.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/physics.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+            <state relative-caret-position="4800">
+              <caret line="419" column="22" lean-forward="false" selection-start-line="419" selection-start-column="22" selection-end-line="419" selection-end-column="22" />
               <folding>
                 <element signature="e#71#91#0" expanded="true" />
                 <element signature="e#196#381#0" expanded="false" />
@@ -67,7 +67,7 @@
                 <element signature="e#1514#1617#0" expanded="false" />
                 <element signature="e#1619#1742#0" expanded="false" />
                 <element signature="e#2110#2238#0" expanded="false" />
-                <element signature="e#2287#2980#0" expanded="false" />
+                <element signature="e#2291#2984#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,8 +86,8 @@
       <file leaf-file-name="physics.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/physics.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <state relative-caret-position="365">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,9 +96,11 @@
       <file leaf-file-name="game.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding>
+                <element signature="e#35#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,11 +119,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game.c" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/res/map.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/physics.c" />
         <option value="$PROJECT_DIR$/src/physics.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/res/map.txt" />
+        <option value="$PROJECT_DIR$/src/physics.c" />
+        <option value="$PROJECT_DIR$/src/game.h" />
+        <option value="$PROJECT_DIR$/src/game.c" />
       </list>
     </option>
   </component>
@@ -132,10 +135,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,6 +193,11 @@
               <item name="PACMAN(phase2)" type="462c0819:PsiDirectoryNode" />
               <item name="sdl" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PACMAN_phase2_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="PACMAN(phase2)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -243,11 +250,15 @@
       <workItem from="1513892909635" duration="8647000" />
       <workItem from="1513967739376" duration="2081000" />
       <workItem from="1513981221741" duration="9678000" />
+      <workItem from="1514045092235" duration="2110000" />
+      <workItem from="1514117535405" duration="116000" />
+      <workItem from="1514139660470" duration="325000" />
+      <workItem from="1514140148142" duration="268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22674000" />
+    <option name="totallyTimeSpent" value="25493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -287,11 +298,159 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2144">
+          <caret line="134" column="6" lean-forward="false" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2752">
+          <caret line="172" column="23" lean-forward="false" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/reality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2144">
+          <caret line="134" column="6" lean-forward="false" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7648">
+          <caret line="478" column="5" lean-forward="false" selection-start-line="478" selection-start-column="5" selection-end-line="478" selection-end-column="5" />
+          <folding>
+            <element signature="e#71#91#0" expanded="true" />
+            <element signature="e#196#381#0" expanded="false" />
+            <element signature="e#383#739#0" expanded="false" />
+            <element signature="e#741#1202#0" expanded="false" />
+            <element signature="e#1204#1355#0" expanded="false" />
+            <element signature="e#1356#1511#0" expanded="false" />
+            <element signature="e#1514#1617#0" expanded="false" />
+            <element signature="e#1619#1742#0" expanded="false" />
+            <element signature="e#2110#2238#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2752">
+          <caret line="172" column="23" lean-forward="false" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/reality.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4480">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#91#0" expanded="true" />
+            <element signature="e#196#381#0" expanded="false" />
+            <element signature="e#383#739#0" expanded="false" />
+            <element signature="e#741#1202#0" expanded="false" />
+            <element signature="e#1204#1355#0" expanded="false" />
+            <element signature="e#1356#1511#0" expanded="false" />
+            <element signature="e#1514#1617#0" expanded="false" />
+            <element signature="e#1619#1742#0" expanded="false" />
+            <element signature="e#2110#2238#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -320,7 +479,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -338,7 +499,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -365,7 +526,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -382,7 +543,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -416,7 +579,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -441,7 +604,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -467,7 +632,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -492,7 +657,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -525,7 +692,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -550,7 +717,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -575,14 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/reality.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -593,40 +754,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/res/map.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="172" column="23" lean-forward="false" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        <state relative-caret-position="48">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#35#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/physics.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+        <state relative-caret-position="4800">
+          <caret line="419" column="22" lean-forward="false" selection-start-line="419" selection-start-column="22" selection-end-line="419" selection-end-column="22" />
           <folding>
             <element signature="e#71#91#0" expanded="true" />
             <element signature="e#196#381#0" expanded="false" />
@@ -637,7 +808,7 @@
             <element signature="e#1514#1617#0" expanded="false" />
             <element signature="e#1619#1742#0" expanded="false" />
             <element signature="e#2110#2238#0" expanded="false" />
-            <element signature="e#2287#2980#0" expanded="false" />
+            <element signature="e#2291#2984#0" expanded="false" />
           </folding>
         </state>
       </provider>

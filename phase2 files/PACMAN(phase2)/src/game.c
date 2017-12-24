@@ -46,8 +46,8 @@ void initiateGame(char* filename, Map* outMap, Game* outGame, Pacman* outPacman,
     {
         for(int i = 0; i < Xs; i++)
         {
-            if(buf[1 + j][i] == CELL_BLOCK || buf[1 + j][i] == CELL_EMPTY || buf[1 + j][i] == CELL_PINEAPPLE)
-                outMap->cells[i][j] = buf[1 + j][i];
+            //if(buf[1 + j][i] == CELL_BLOCK || buf[1 + j][i] == CELL_EMPTY )//|| buf[1 + j][i] == CELL_PINEAPPLE)
+            outMap->cells[i][j] = buf[1 + j][i];
 
             if(buf[1 + j][i] == CELL_CHEESE)
                 (outGame->cheeses)++;
@@ -237,7 +237,6 @@ void checkEatables(Map* map, Game* outGame, Pacman* outPacman, Ghost* outGhosts)
 
 void checkGhostCollision(Pacman* outPacman, Ghost* outGhost) {
 
-    return;
     int nwx, nwy, mx, my;
 
     nwx = (int)(outPacman->x);

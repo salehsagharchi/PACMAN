@@ -142,8 +142,8 @@ int firstqu(int * queu, int max)
     }
 }
 
-Pacman * pacmang;
-Ghost * blinkyg;
+//Pacman * pacmang;
+//Ghost * blinkyg;
 int max;
 
 
@@ -178,7 +178,7 @@ POINT getfirstvalid (const Map* map,int x, int y)
     return res;
 }
 
-POINT gettarget(const Map* map, Ghost* ghost)
+POINT gettarget(const Map* map, Ghost* ghost , Pacman *pacman , Ghost *blinky)
 {
     POINT t;
 
@@ -190,23 +190,23 @@ POINT gettarget(const Map* map, Ghost* ghost)
 
     if(ghost->type == BLINKY)
     {
-        t.x = (int)pacmang->x;
-        t.y = (int)pacmang->y;
+        t.x = (int)pacman->x;
+        t.y = (int)pacman->y;
     }
     if(ghost->type == PINKY)
     {
         int next = 0;
         POINT d;
         int X, Y;
-        d = getpoint(pacmang->dir);
+        d = getpoint(pacman->dir);
         for(int i = 4 ; i >= 0 ; i--)
         {
 
             int notd = 0;
             for (int j = 1; j <= i; j++)
             {
-                X = (int)pacmang->x + d.x * j;
-                Y = (int)pacmang->y + d.y * j;
+                X = (int)pacman->x + d.x * j;
+                Y = (int)pacman->y + d.y * j;
                 X = valideX(X,map->width);
                 Y = valideY(Y,map->height);
                 if(map->cells[X][Y] == CELL_BLOCK)
@@ -220,8 +220,8 @@ POINT gettarget(const Map* map, Ghost* ghost)
                 break;
             }
         }
-        X = (int)pacmang->x + d.x * next;
-        Y = (int)pacmang->y + d.y * next;
+        X = (int)pacman->x + d.x * next;
+        Y = (int)pacman->y + d.y * next;
         X = valideX(X,map->width);
         Y = valideY(Y,map->height);
         t.x = X;
@@ -231,11 +231,11 @@ POINT gettarget(const Map* map, Ghost* ghost)
     {
         int x1,x2,X,y1,y2,Y;
         POINT d;
-        d = getpoint(pacmang->dir);
-        x1 = (int)pacmang->x + d.x * 2;
-        y1 = (int)pacmang->y + d.y * 2;
-        x2 = (int)blinkyg->x;
-        y2 = (int)blinkyg->y;
+        d = getpoint(pacman->dir);
+        x1 = (int)pacman->x + d.x * 2;
+        y1 = (int)pacman->y + d.y * 2;
+        x2 = (int)blinky->x;
+        y2 = (int)blinky->y;
         X = x1 + (x1 - x2);
         Y = y1 + (y1 - y2);
         t = getfirstvalid(map,X,Y);
@@ -245,8 +245,8 @@ POINT gettarget(const Map* map, Ghost* ghost)
         int dis =0 ,X,Y,x1,y1;
         X = (int)ghost->x;
         Y = (int)ghost->y;
-        x1 = (int)pacmang->x;
-        y1 = (int)pacmang->y;
+        x1 = (int)pacman->x;
+        y1 = (int)pacman->y;
         dis = (X - x1) * (X - x1) + (Y - y1) * (Y - y1);
         if(dis > 64)
         {
@@ -282,11 +282,6 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
 {
     max = map->width * map->height;
 
-    if(ghost->type == BLINKY)
-    {
-        blinkyg = ghost;
-    }
-
    // if(ghost->type != CLYDE)
     //{
        // return DIR_NONE;
@@ -298,8 +293,7 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
     // START AI
 
 
-
-    target = gettarget(map, ghost);
+    target = gettarget(map, ghost , pacman , blinky);
 
 
     //ghost->x =target.x;
@@ -333,7 +327,7 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
 
     int nowq = 0;
     int nowid = 0;
-
+    int yfs =  firstqu(queue,max);
     nowq = firstqu(queue,max);
     nowid = getid(ghx,ghy,map->width);
     queue[nowq] = nowid;
@@ -353,22 +347,8 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
             dirr = getpoint(di);
             X = (int)ghost->x + dirr.x;
             Y = (int)ghost->y + dirr.y;
-            if(X < 0)
-            {
-                X = map->width - 1;
-            }
-            if(X >= map->width)
-            {
-                X = 0;
-            }
-            if(Y < 0)
-            {
-                Y = map->height - 1;
-            }
-            if(Y >= map->height)
-            {
-                Y = 0;
-            }
+            X = valideX(X,map->width);
+            Y = valideY(Y,map->height);
 
             if(map->cells[X][Y] == '#')
             {
@@ -386,7 +366,7 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
         if(nowq > max)
         {
             printf("\n\n\n\n NOT FINDED!\n\n\n\n");
-            printf("\n\n\n\nTARGET : %d %d\n\n\n\n",target.x,target.y);
+            printf("\n\n\n\nTARGET : %d %d  START : %d %d FIRST : %d\n\n\n\n",target.x,target.y,ghx,ghy,yfs);
             endwhile = 1;
         }
         if (visited[queue[nowq]] == 0)
@@ -477,18 +457,31 @@ Direction decideGhost(const Map *map , Ghost *ghost , Pacman *pacman , Ghost *bl
 
 
 
+    int di = -1 , X , Y;
+    while (di == -1)
+    {
+        di = (int)(rand() % 4) + 1;
+        POINT dirr;
+        dirr = getpoint(di);
+        X = (int)ghost->x + dirr.x;
+        Y = (int)ghost->y + dirr.y;
+        X = valideX(X,map->width);
+        Y = valideY(Y,map->height);
 
-
-
-    return DIR_NONE;
+        if(map->cells[X][Y] == '#')
+        {
+            di = -1;
+        }
+        else
+        {
+            return di;
+        }
+    }
 
 }
 
 Direction decidePacman(const Map* map, Pacman* pacman, Action action) {
 
-
-
-    pacmang = pacman;
 
     int X, Y;
 
