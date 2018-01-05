@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.c" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/cmake-build-debug/CMakeFiles/PACMAN_phase2_.dir/src/game.c.o"
-  "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.c" "/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/cmake-build-debug/CMakeFiles/PACMAN_phase2_.dir/src/physics.c.o"
+  "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.c" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/cmake-build-debug/CMakeFiles/PACMAN_phase2_.dir/src/game.c.o"
+  "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.c" "/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/cmake-build-debug/CMakeFiles/PACMAN_phase2_.dir/src/physics.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

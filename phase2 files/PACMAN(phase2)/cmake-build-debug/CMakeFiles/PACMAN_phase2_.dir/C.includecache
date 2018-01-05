@@ -14,9 +14,9 @@ game.h
 input.h
 ../src/input.h
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.c
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.c
 game.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
 stdio.h
 -
 stdlib.h
@@ -28,23 +28,23 @@ math.h
 time.h
 -
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
 stdbool.h
 -
 map.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/input.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/input.h
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.c
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.c
 physics.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.h
 game.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
 map.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/map.h
 stdlib.h
 -
 stdio.h
@@ -52,9 +52,9 @@ stdio.h
 math.h
 -
 
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/physics.h
 game.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/game.h
 input.h
-/cygdrive/c/Users/Saleh/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/input.h
+/cygdrive/g/Dropbox/SHARIF/96-97 Fall/PACMAN PROJECT/96110797/phase2 files/PACMAN(phase2)/src/input.h
 
